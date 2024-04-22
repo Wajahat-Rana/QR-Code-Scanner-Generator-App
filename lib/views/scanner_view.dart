@@ -8,6 +8,7 @@ class QRScanner extends StatefulWidget {
 }
 
 class _QRScannerState extends State<QRScanner> {
+  
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -18,6 +19,7 @@ class _QRScannerState extends State<QRScanner> {
         title: const Text("Scan QR Code Here!",style: TextStyle(color: Colors.white),),
         backgroundColor: Colors.lightBlue,
       ),
+      
     );
   }
 }

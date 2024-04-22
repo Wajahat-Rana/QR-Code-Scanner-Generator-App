@@ -43,11 +43,16 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(onPressed: (){
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => const QRScanner()));
+              setState(() {
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => const QRScanner()));
+              });
+              
             }, child: const Text("QR Code Scanner")),
             const SizedBox(height: 20,),
             ElevatedButton(onPressed: (){
+              setState(() {
               Navigator.of(context).push(MaterialPageRoute(builder: (context) => const QRGenerator()));
+              });
             }, child: const Text("QR Code Generator")),
           ],
         ),
